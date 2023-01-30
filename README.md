@@ -10,7 +10,6 @@
 - 🎧 [ListenFirst Media](listenfirstmedia.com) - Full Stack Software Engineer - March 2022 - Present
     - Developed new features according to product standards.
     - Investigated and fixed bugs in both front-end and back-end.
-  Initiatives led:
     - **Continuous integration:** restored outdated tests to a working state, and ran automated pull
       request builds on a Jenkins server.
     - **Batch Upload Tags:** allowed users to upload tags and their associated posts, which were then
