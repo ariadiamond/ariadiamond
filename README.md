@@ -11,19 +11,17 @@
     - Developed new features according to product standards.
     - Investigated and fixed bugs in both front-end and back-end.
     - **Continuous integration:** restored outdated tests to a working state, and ran automated pull
-      request builds on a Jenkins server.
+      request builds on Jenkins and GitHub Actions.
     - **Batch Upload Tags:** allowed users to upload tags and their associated posts, which were then
       queryable in the platform.
     - **Code clean up:** Deleted tens of thousands of lines of dead code. This decreased the size of
       code bundles by over a megabyte, improving performance for clients.
     - **Reactify Legacy Application:** Currently migrating a single page application from
       Backbone.js and jQuery to React, including unifying state in a single store with pure
-      rerenders, and improving readability of event handling to increase maintainability for future
+      renders, and improving readability of event handling to increase maintainability for future
       tweaks.
 
 ## Projects
-- 🔏 [Journal](https://github.com/ariadiamond/Journal). A Journaling app that feels like texting a
-     close friend. Written in ReactNative with TypeScript.
 - 🐐 [Nan, an HTTP Server](https://github.com/ariadiamond/Nan-http). Includes config files to build
      web pages from markdown and HTML files. Written in Golang with functional tests in python3.
 - 📊 [Data visualizations](https://observablehq.com/@ariadiamond/wildfires-interdependence-of-humans-and-nature)
