@@ -1,25 +1,32 @@
 - 👋 Good morning! I’m Aria Diamond.
-- 👀 I’m most interested in front-end development, but I'm open to working with any part of the
-     stack.
+- 👀 I’m most interested in front-end development and design, but I'm open to working with any part
+     of the stack.
 - 🖥 Currently working as a full stack engineer working primarily on web frontend with technologies
-     like React and Sass.
+     like React, Redux and Sass and backend technologies like Ruby on Rails and PostgreSQL.
 - ❗️ A PDF version of my resume is available [here](Resume.pdf), and contains similar information to
      this README.
 
-## Work experience
-- 🎧 [ListenFirst Media](listenfirstmedia.com) - Full Stack Software Engineer - March 2022 - Present
-    - Developed new features according to product standards.
-    - Investigated and fixed bugs in both front-end and back-end.
-    - **Continuous integration:** restored outdated tests to a working state, and ran automated pull
-      request builds on Jenkins and GitHub Actions.
-    - **Batch Upload Tags:** allowed users to upload tags and their associated posts, which were then
-      queryable in the platform.
-    - **Code clean up:** Deleted tens of thousands of lines of dead code. This decreased the size of
-      code bundles by over a megabyte, improving performance for clients.
-    - **Reactify Legacy Application:** Currently migrating a single page application from
-      Backbone.js and jQuery to React, including unifying state in a single store with pure
-      renders, and improving readability of event handling to increase maintainability for future
-      tweaks.
+## Full Stack Software Engineer II, 🎧 [ListenFirst Media](https://www.listenfirstmedia.com) - March 2022 - Present
+- **Tableau Like Report:** built a custom reporting service allowing clients to choose date
+  ranges, brands, and metrics and see tables and graphs, broken down by various date ranges and
+  content types.
+- **Self-Service Features:** created Settings: Brands, and Settings: Brand Sets, 2 features that
+  allowed clients to modify the database in controlled ways (limited to account scope and
+  with caveats to make certain Brands and Brand Sets read only). Added indexes to database
+  tables, as well as creating audit tables to display who made which modifications. Created
+  openAPI compliant APIs and a frontend by it to allow point and click access for non-technical
+  clients.
+- **Continuous integration:** restored outdated tests to a working state, and ran automated Pull
+  Request builds on Jenkins and GitHub Actions. Added code coverage comments on Github Pull
+  Requests to note if someone needed to add code coverage.
+- **Batch Upload Tags:** allowed users to upload tags and their associated posts, which were then
+  queryable in the platform.
+- **Code clean up:** Deleted tens of thousands of lines of dead code. This decreased the size of
+  code bundles by 3+ megabytes, improving performance for clients.
+- **Reactify Legacy Application:** Currently migrating a single page application from
+  Backbone.js and jQuery to React, including unifying state in a single store with pure
+  renders, and improving readability of event handling to increase maintainability for future
+  tweaks.
 
 ## Projects
 - 🐐 [Nan, an HTTP Server](https://github.com/ariadiamond/Nan-http). Includes config files to build
