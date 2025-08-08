@@ -16,32 +16,32 @@ The 4 basic features people needed to choose were:
 
 It also includes a lot of sensible defaults with some of the more complex features easy to skip over until an analyst is ready.
 
-[!design_search.jpg]
+![The Data Studio design with the search box open. The configuration is currently on Page mode, with 2 brands and 2 metrics added](design_search.jpg)
 
-Above is the first iteration, with the configuration people chose on the left. From here, a lot of the basic components stayed the same, with the most notable change being in the date range (with a Custom option instead of the button to [show a complex view](./design_comment_date.jpg) and the addition of interval) and the metric selection becoming a button instead of typeahead, along with a couple minor styling changes.
+Above is the first iteration, with the configuration people chose on the left. From here, a lot of the basic components stayed the same, with the most notable change being in the date range (with a Custom option instead of the button to [show a complex view](./design_comment_date.png) and the addition of interval) and the metric selection becoming a button instead of typeahead, along with a couple minor styling changes.
 
 On the right (once the Go button is pressed) is the display output. This has changed much less, but mainly, there was the removal of a cohort row, and addition of the Brand/Metric toggle (which allowed someone to look at multiple metrics for one brand, or multiple brands for one metric).
 
-[!prod_page_level.png]
+![A screenshot of Data Studio running in production with 4 brands and 4 metrics. A graph and table are displayed on the right.](prod_page_level.png)
 
-<detail>
-  <summary>A quick aside on what page level versus post level means</summary>
+<details>
+  <summary><b>A quick aside on what page level versus post level means</b></summary>
   While there is some overlap (that gets a bit more nuanced for differences), the overall difference is that Page Level includes metrics like follows that only exist for a page level. Similarly Post Level metrics include a lot of intuitive metrics like likes and comments counts.
   
   #### What about overlapping metrics?
   We do also have certain metrics like a Page Level like count, this might come to a different number than if we were to take all the posts and add up each's like count. While counterintuitive, both of these metrics are useful, even when they disagree. The first main change is attribution windows (ie should we attribute a like to the day a viewer clicked like (fact), or the day when account posted the post?). By default, Data Studio groups on In-Window mode: which is to say that the post and fact must be within the specified date range. A brand level metric might group on In-Action: regardless of when the posts were posted, but just including all facts within the date range. In-Action is not feasible from a data perspective on a post level.
   The other main difference is that we might get both Page and Post Level metrics from the data provider. These numbers are not guaranteed to match either (but at this point it's out of our control), but also certain data providers will give us additional breakdowns on a Page Level that they do not provide at a Post Level.
-</detail>
+</details>
 
 #### Breakdowns
 
 While the above is the basic case, where we want a new client to be able to use the feature without being overwhelmed, we also want to support more complex use cases as users grow. Below is the Breakdowns feature in design, which allowed disaggregation on certain dimensions. The main concern with Breakdowns is that while it adds a lot of power and works beautifully in rowspanned columns, the graph is a bit of a mess. The legend names become very long, and trying to select a breakdown becomes an unruly list with too many nested options.
 
-[!design_breakdown.jpg]
+![A design of the Breakdowns feature with the breakdowns dropdown open. The graph legend contains long names denoting each breakdown. A table is below the graph.](design_breakdown.jpg)
 
 Thus what happened in the final implementation was a dropping of graphs to minimize complexity. While potentially it's easier to visualize than look at numbers, the additional confusion it would've caused did not warrant the complexity it brought. We have sticky grouping columns (ie the Breakdowns, in addition to metric and Brand as default) and an export feature such that an analyst can pop the data into another program to build those graphs to their heart's content without the restrictions placed to ensure usability.
 
-[!prod_breakdown.png]
+![The table displays Instagram Comments for 4 brands grouped by content type with data.](prod_breakdown.png)
 
 ---
 

@@ -9,7 +9,7 @@
 ## Full Stack Software Engineer II, 🎧 [ListenFirst Media](https://www.listenfirstmedia.com) - March 2022 - Present
 - **Tableau Like Report:** built a custom reporting service allowing clients to choose date
   ranges, brands, and metrics and see tables and graphs, broken down by various date ranges and
-  content types. An in [depth analysis of some of the system design and tradeoffs is avaiable here](./data_studio/data_studio.md)
+  content types. An in [depth analysis of some of the system design and tradeoffs is avaliable here](./data_studio/data_studio.md)
 - **Self-Service Features:** created Settings: Brands, and Settings: Brand Sets, 2 features that
   allowed clients to modify the database in controlled ways (limited to account scope and
   with caveats to make certain Brands and Brand Sets read only). Added indexes to database
